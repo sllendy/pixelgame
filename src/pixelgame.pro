@@ -14,10 +14,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         widget.cpp \
-    scene.cpp
+    scene.cpp \
+    maincharacter.cpp \
+    world.cpp
 
 HEADERS  += widget.h \
-    scene.h
+    scene.h \
+    maincharacter.h \
+    world.h
 
 FORMS    += widget.ui
 
