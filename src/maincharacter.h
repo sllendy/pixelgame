@@ -1,14 +1,14 @@
 #ifndef MAINCHARACTER_H
 #define MAINCHARACTER_H
 
-#include <QGraphicsItemGroup>
+#include <QObject>
 #include <QGraphicsPixmapItem>
 
-class mainCharacter : public QObject, public QGraphicsItemGroup
+class mainCharacter : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    explicit mainCharacter();
+    explicit mainCharacter(QPixmap pixmap);
 
 private:
 

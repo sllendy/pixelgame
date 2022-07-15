@@ -1,6 +1,6 @@
 #include "maincharacter.h"
 
-mainCharacter::mainCharacter()
+mainCharacter::mainCharacter(QPixmap pixmap)
 {
-
+    setPixmap(pixmap);
 }

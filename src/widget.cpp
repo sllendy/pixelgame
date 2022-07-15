@@ -20,8 +20,8 @@ Widget::Widget(QWidget *parent) :
     scene->addLine(-400,0,400,0,QPen(Qt::blue));
     scene->addLine(0,-400,0,400,QPen(Qt::blue));
 
-    World * world = new World();
-    scene -> addItem(world);
+//    World * world = new World();
+//    scene -> addItem(world);
 
     ui->graphicsView->setScene(scene);
 }
