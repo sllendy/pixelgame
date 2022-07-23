@@ -4,5 +4,7 @@
         <file>bush.png</file>
         <file>house.png</file>
         <file>bg.png</file>
+        <file>sprite1.png</file>
+        <file>sprite2.png</file>
     </qresource>
 </RCC>
