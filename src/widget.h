@@ -20,6 +20,15 @@ private:
     Ui::Widget *ui;
 
     Scene *scene;
+
+signals:
+    void moveDown();
+    void moveLeft();
+    void moveUp();
+    void moveRight();
+
+protected:
+    void keyPressEvent(QKeyEvent *event);
 };
 
 #endif // WIDGET_H

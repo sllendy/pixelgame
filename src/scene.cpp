@@ -6,7 +6,7 @@ Scene::Scene(QObject *parent) : QGraphicsScene(parent)
 {
     character = new mainCharacter(QPixmap(":/sprite1.png"));
     world = new World();
-    QGraphicsPixmapItem *world_bg = new QGraphicsPixmapItem(QPixmap(":/bg.png"));
+    world_bg = new QGraphicsPixmapItem(QPixmap(":/bg.png"));
     addItem(world_bg);
     world_bg->setPos(QPointF(0,0) - QPointF(world_bg->boundingRect().width()/2,
                                             world_bg->boundingRect().height()/2));
@@ -18,28 +18,23 @@ Scene::Scene(QObject *parent) : QGraphicsScene(parent)
 
 }
 
-void Scene::keyPressEvent(QKeyEvent *event)
+void Scene::moveUp()
 {
-    if (event->key()  == Qt::Key_W)
-    {
-        qDebug() << "W Pressed";
-        emit moveUp();
-        QGraphicsScene::keyPressEvent(event);
-    }
+    world_bg->setPos(world_bg->pos().x(), world_bg->pos().y()+dy);
+}
 
-    if (event->key() == Qt::Key_A)
-    {
-        emit moveLeft();
-    }
+void Scene::moveDown()
+{
+    world_bg->setPos(world_bg->pos().x(), world_bg->pos().y()-dy);
+}
 
-    if (event->key() == Qt::Key_S)
-    {
-        emit moveDown();
-    }
+void Scene::moveLeft()
+{
+    world_bg->setPos(world_bg->pos().x()+dx, world_bg->pos().y());
+}
 
-    if (event->key() == Qt::Key_D)
-    {
-        emit moveRight();
-    }
+void Scene::moveRight()
+{
+    world_bg->setPos(world_bg->pos().x()-dx, world_bg->pos().y());
 }
 

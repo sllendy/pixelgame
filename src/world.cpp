@@ -2,6 +2,7 @@
 #include <QRandomGenerator>
 #include <QGraphicsScene>
 #include <QDebug>
+#include <scene.h>
 
 World::World() :
     house(new QGraphicsPixmapItem(QPixmap(":/house.png"))),
@@ -25,25 +26,22 @@ World::~World()
 
 }
 
-qreal World::x() const
+void World::moveUp()
 {
-    return m_x;
+
 }
 
-qreal World::y() const
+void World::moveDown()
 {
-    return m_y;
+
 }
 
-
-void World::setX(qreal x)
+void World::moveLeft()
 {
-    m_x = x;
-    setPos(QPointF(0,0) + QPointF(x, m_y));
+
 }
 
-void World::setY(qreal y)
+void World::moveRight()
 {
-    m_y = y;
-    setPos(QPointF(0,0) + QPointF(m_x, y));
+
 }
