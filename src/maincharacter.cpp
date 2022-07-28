@@ -23,3 +23,30 @@ void mainCharacter::updatePixmap(characterDir characterDir_in)
     }
 }
 
+void mainCharacter::moveUp()
+{
+
+}
+
+
+
+void mainCharacter::moveDown()
+{
+    if (characterDirection == characterDir::D1){
+        characterDirection = characterDir::D2;
+    }
+    else if (characterDirection = characterDir::D2){
+             characterDirection == characterDir::D1;
+    }
+}
+
+void mainCharacter::moveLeft()
+{
+
+}
+
+void mainCharacter::moveRight()
+{
+
+}
+

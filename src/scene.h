@@ -22,6 +22,12 @@ private:
     int dy = 20;
     int dx = 20;
 
+signals:
+    void moveUpSig();
+    void moveDownSig();
+    void moveLeftSig();
+    void moveRightSig();
+
 
 public slots:
     void moveUp();

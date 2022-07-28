@@ -28,20 +28,20 @@ World::~World()
 
 void World::moveUp()
 {
-
+    setPos(pos().x(), pos().y() + dy);
 }
 
 void World::moveDown()
 {
-
+    setPos(pos().x(), pos().y() - dy);
 }
 
 void World::moveLeft()
 {
-
+    setPos(pos().x() + dx, pos().y());
 }
 
 void World::moveRight()
 {
-
+    setPos(pos().x() - dx, pos().y());
 }

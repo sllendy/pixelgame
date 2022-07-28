@@ -12,10 +12,7 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
 
     scene = new Scene(this);
-    scene->setSceneRect(-250, -300, 500, 600);
-
-    scene->addLine(-400,0,400,0,QPen(Qt::blue));
-    scene->addLine(0,-400,0,400,QPen(Qt::blue));
+    scene->setSceneRect(-250, -250, 500, 500);
 
     connect(this, &Widget::moveUp, scene, &Scene::moveUp);
     connect(this, &Widget::moveDown, scene, &Scene::moveDown);

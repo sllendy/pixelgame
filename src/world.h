@@ -28,10 +28,10 @@ private:
 signals:
 
 public slots:
-void moveUp();
-void moveDown();
-void moveLeft();
-void moveRight();
+    void moveUp();
+    void moveDown();
+    void moveLeft();
+    void moveRight();
 
 };
 
