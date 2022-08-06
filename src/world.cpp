@@ -5,8 +5,8 @@
 #include <scene.h>
 
 World::World() :
-    house(new QGraphicsPixmapItem(QPixmap(":/house.png"))),
-    bush(new QGraphicsPixmapItem(QPixmap(":/bush.png")))
+    house(new QGraphicsPixmapItem(QPixmap(":/assets/house.png"))),
+    bush(new QGraphicsPixmapItem(QPixmap(":/assets/bush.png")))
 {
     house->setPos(QPointF(0.0,0.0) - QPointF(house->boundingRect().width()/2,
                                              house->boundingRect().height()/2));

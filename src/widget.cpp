@@ -19,8 +19,8 @@ Widget::Widget(QWidget *parent) :
     connect(this, &Widget::moveLeft, scene, &Scene::moveLeft);
     connect(this, &Widget::moveRight, scene, &Scene::moveRight);
 
-
     ui->graphicsView->setScene(scene);
+
 }
 
 Widget::~Widget()

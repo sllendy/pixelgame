@@ -13,18 +13,26 @@ public:
     enum characterDir{
         D1,
         D2,
+        D3,
+        D4,
         L1,
         L2,
+        L3,
+        L4,
         U1,
         U2,
+        U3,
+        U4,
         R1,
-        R2
+        R2,
+        R3,
+        R4
     };
 
 
 private:
 
-    void updatePixmap(characterDir characterDir_in);
+    void updatePixmap();
     characterDir characterDirection;
 
 

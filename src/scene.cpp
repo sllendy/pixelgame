@@ -1,12 +1,13 @@
 #include "scene.h"
+#include "maincharacter.h"
 #include <QKeyEvent>
 #include <QDebug>
 
 Scene::Scene(QObject *parent) : QGraphicsScene(parent)
 {
-    character = new mainCharacter(QPixmap(":/sprite1.png"));
+    character = new mainCharacter(QPixmap(":/assets/D1.png"));
     world = new World();
-    world_bg = new QGraphicsPixmapItem(QPixmap(":/bg.png"));
+    world_bg = new QGraphicsPixmapItem(QPixmap(":/assets/bg.png"));
     addItem(world_bg);
     world_bg->setPos(QPointF(0,0) - QPointF(world_bg->boundingRect().width()/2,
                                             world_bg->boundingRect().height()/2));
@@ -20,6 +21,11 @@ Scene::Scene(QObject *parent) : QGraphicsScene(parent)
     connect(this, &Scene::moveDownSig, world, &World::moveDown);
     connect(this, &Scene::moveLeftSig, world, &World::moveLeft);
     connect(this, &Scene::moveRightSig, world, &World::moveRight);
+
+    connect(this, &Scene::moveUpSig, character, &mainCharacter::moveUp);
+    connect(this, &Scene::moveDownSig, character, &mainCharacter::moveDown);
+    connect(this, &Scene::moveLeftSig, character, &mainCharacter::moveLeft);
+    connect(this, &Scene::moveRightSig, character, &mainCharacter::moveRight);
 
 
 }

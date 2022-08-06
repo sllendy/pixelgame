@@ -1,10 +1,32 @@
 <RCC>
     <qresource prefix="/">
-        <file>cherry-blossom.jpg</file>
-        <file>bush.png</file>
-        <file>house.png</file>
-        <file>bg.png</file>
-        <file>sprite1.png</file>
-        <file>sprite2.png</file>
+        <file>assets/D1.png</file>
+        <file>assets/D2.png</file>
+        <file>assets/D3.png</file>
+        <file>assets/D4.png</file>
+        <file>assets/L1.png</file>
+        <file>assets/L2.png</file>
+        <file>assets/L3.png</file>
+        <file>assets/L4.png</file>
+        <file>assets/R1.png</file>
+        <file>assets/R2.png</file>
+        <file>assets/R3.png</file>
+        <file>assets/R4.png</file>
+        <file>assets/U1.png</file>
+        <file>assets/U2.png</file>
+        <file>assets/U3.png</file>
+        <file>assets/U4.png</file>
+        <file>main.cpp</file>
+        <file>maincharacter.cpp</file>
+        <file>maincharacter.h</file>
+        <file>scene.cpp</file>
+        <file>scene.h</file>
+        <file>widget.cpp</file>
+        <file>widget.h</file>
+        <file>world.cpp</file>
+        <file>world.h</file>
+        <file>assets/bush.png</file>
+        <file>assets/house.png</file>
+        <file>assets/bg.png</file>
     </qresource>
 </RCC>
