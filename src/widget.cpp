@@ -32,7 +32,6 @@ void Widget::keyPressEvent(QKeyEvent *event)
 {
     if (event->key()  == Qt::Key_W)
     {
-        qDebug() << "W Pressed";
         emit moveUp();
         QWidget::keyPressEvent(event);
     }
@@ -40,21 +39,18 @@ void Widget::keyPressEvent(QKeyEvent *event)
     if (event->key() == Qt::Key_A)
     {
         emit moveLeft();
-        qDebug() << "A Pressed";
         QWidget::keyPressEvent(event);
     }
 
     if (event->key() == Qt::Key_S)
     {
         emit moveDown();
-        qDebug() << "S Pressed";
         QWidget::keyPressEvent(event);
     }
 
     if (event->key() == Qt::Key_D)
     {
         emit moveRight();
-        qDebug() << "D Pressed";
         QWidget::keyPressEvent(event);
     }
 }
